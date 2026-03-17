@@ -49,3 +49,33 @@ else:
 
 
 # ==================================== FIM EX03 ====================================
+
+
+# ====================================== EX04 ======================================
+# Crie um programa em Python que registre 5 produtos comprados em um mercado. 
+# Use Listas, laço for e inputs.
+
+produtos = []
+for i in range(5):
+    produto = input("digite o nome do produto: ")
+    produtos.append(produto)
+    print("Produto adicionado com sucesso ")
+           
+# ==================================== FIM EX04 ====================================
+
+# ====================================== EX05 ======================================
+# Crie um programa em Python que registre 5 números digitados pelo usuário e 
+# depois mostre algumas informações sobre eles, use laço For.
+# 1 - A lista completa de números
+# 2 - O maior número
+# 3 - O menor número
+# 4 - A soma de todos os números
+
+numeros = []
+for i in range(5):
+    numero = int(input("digite um número: "))
+    numeros.append(numero)
+
+  
+
+# ==================================== FIM EX05 ====================================
