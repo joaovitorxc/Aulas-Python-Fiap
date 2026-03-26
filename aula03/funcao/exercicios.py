@@ -79,6 +79,15 @@ palavra = input("digite uma palavra: ")
 resultado = contar_vogal(palavra)
 print("quantidade de vogais: ", resultado)
 
+# crie uma função que recebe um número e retorna o seu fatorial. o fatorial de um número n é o produto de todos os numeros inteiros menores ou iguais a n
 
+def fatorial(n):
+    resultado = 1
+    
+    for i in range(1, n + 1):
+        resultado = resultado * i
+    
+    return resultado
 
-
+numero = int(input("Digite um número: "))
+print("Fatorial:", fatorial(numero))
