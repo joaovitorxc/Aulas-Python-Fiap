@@ -72,10 +72,136 @@ for i in range(5):
 # 4 - A soma de todos os números
 
 numeros = []
+
 for i in range(5):
-    numero = int(input("digite um número: "))
-    numeros.append(numero)
+    numeros.append(int(input("Digite um número: ")))
 
-  
+print("Lista:", numeros)
 
+maior = numeros[0]
+menor = numeros[0]
+soma = 0
+
+for i in range(5):
+    if numeros[i] > maior:
+        maior = numeros[i]
+    if numeros[i] < menor:
+        menor = numeros[i]
+    soma = soma + numeros[i]
+
+print("Maior:", maior)
+print("Menor:", menor)
+print("Soma:", soma)
 # ==================================== FIM EX05 ====================================
+
+# ====================================== EX06 ======================================
+# Crie um programa em Python que peça números ao usuário e some todos eles.
+# Use o laço while e receba numeros ate que uma condição seja atendida.
+
+soma = 0
+num = 0
+
+while num != -1:
+    num = int(input("Digite um número (-1 para parar): "))
+    if num != -1:
+        soma += num
+
+print("Soma total:", soma)
+
+# ==================================== FIM EX06 ====================================
+
+# ====================================== EX07 ======================================
+# Crie um programa em Python que simule um sistema simples de login.
+# Usar um primeiro laço while para pedir o nome de usuário até que 
+# o usuário digite o valor correto, faça o mesmo para a senha.
+usuario_correto = "joao"
+senha_correta = "333"
+
+usuario = ""
+
+while usuario != usuario_correto:
+    usuario = input("Digite o usuário: ")
+
+senha = ""
+
+while senha != senha_correta:
+    senha = input("Digite a senha: ")
+
+print("Login realizado com sucesso!")
+
+# ==================================== FIM EX07 ====================================
+
+# ====================================== EX08 ======================================
+# Crie um programa em Python que registre 3 notas de alunos, garantindo que 
+# cada nota seja válida, use as estruturas de laço for e while.
+
+notas = []
+
+for i in range(3):
+    nota = -1
+    while nota < 0 or nota > 10:
+        nota = float(input("Digite uma nota (0 a 10): "))
+    notas.append(nota)
+
+print("Notas:", notas)
+
+# ==================================== FIM EX08 ====================================
+
+# ====================================== EX09 ======================================
+# Crie um programa em Python que registre números digitados pelo usuário e 
+# conte quantos são positivos. Use o laço while para registrar todas as entradas
+# depois use o laço for para percorrer toda a lista e fazer a contagem.
+numeros = []
+num = 0
+
+while num != -1:
+    num = int(input("Digite um número (-1 para parar): "))
+    if num != -1:
+        numeros.append(num)
+
+positivos = 0
+
+for n in numeros:
+    if n > 0:
+        positivos += 1
+
+print("Quantidade de positivos:", positivos)
+
+# ==================================== FIM EX09 ====================================
+
+# ====================================== EX10 ======================================
+# Crie um programa em Python que registre as notas de 3 alunos em 4 provas usando
+# uma matriz (lista de listas), calcule a media de cada aluno.
+# Use seu conhecimento de laços para cumprir a tarefa.
+
+notas = []
+
+for i in range(3):
+    aluno = []
+    for j in range(4):
+        nota = float(input("Digite a nota: "))
+        aluno.append(nota)
+    notas.append(aluno)
+
+for i in range(3):
+    soma = 0
+    for j in range(4):
+        soma += notas[i][j]
+    media = soma / 4
+    print("Média do aluno", i+1, ":", media)notas = []
+
+for i in range(3):
+    aluno = []
+    for j in range(4):
+        nota = float(input("Digite a nota: "))
+        aluno.append(nota)
+    notas.append(aluno)
+
+for i in range(3):
+    soma = 0
+    for j in range(4):
+        soma += notas[i][j]
+    media = soma / 4
+    print("Média do aluno", i+1, ":", media)
+
+# ==================================== FIM EX10 ====================================
