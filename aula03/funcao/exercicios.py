@@ -91,3 +91,8 @@ def fatorial(n):
 
 numero = int(input("Digite um número: "))
 print("Fatorial:", fatorial(numero))
+
+
+
+    
+        
